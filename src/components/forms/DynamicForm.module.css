@@ -1,0 +1,30 @@
+.form { display: flex; flex-direction: column; gap: 20px; }
+.required { color: var(--color-error); }
+
+.submitBtn { width: 100%; margin-top: 8px; }
+
+.radioGroup { display: flex; gap: 12px; flex-wrap: wrap; }
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+}
+.radioLabel:hover { border-color: var(--border-hover); }
+.radioInput { accent-color: var(--color-primary); }
+.radioInput:checked + .radioText { color: var(--color-primary-hover); }
+.radioText { font-size: 0.875rem; }
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.checkboxInput { accent-color: var(--color-primary); width: 18px; height: 18px; }
+.checkboxText { font-size: 0.875rem; color: var(--text-secondary); }
